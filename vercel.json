@@ -3,17 +3,12 @@
   "devCommand": "yarn dev",
   "installCommand": "yarn install",
   "framework": "vite",
-  "env": [
-    "GEMINI_API_KEY",
-    "GEMINI_API_KEY2",
-    "SARVAM_API_KEY",
-    "NODE_ENV",
-    "PORT"
-  ],
-  "functions": {
-    "server.ts": {
-      "runtime": "nodejs18.x"
-    }
+  "env": {
+    "GEMINI_API_KEY": "@gemini-api-key",
+    "GEMINI_API_KEY2": "@gemini-api-key2",
+    "SARVAM_API_KEY": "@sarvam-api-key",
+    "NODE_ENV": "@node-env",
+    "PORT": "@port"
   },
   "rewrites": [
     {
