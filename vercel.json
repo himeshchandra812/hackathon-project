@@ -1,23 +1,5 @@
 {
   "buildCommand": "yarn build",
-  "devCommand": "yarn dev",
   "installCommand": "yarn install",
-  "framework": "vite",
-  "env": {
-    "GEMINI_API_KEY": "@gemini-api-key",
-    "GEMINI_API_KEY2": "@gemini-api-key2",
-    "SARVAM_API_KEY": "@sarvam-api-key",
-    "NODE_ENV": "@node-env",
-    "PORT": "@port"
-  },
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/server.ts"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "framework": "vite"
 }
